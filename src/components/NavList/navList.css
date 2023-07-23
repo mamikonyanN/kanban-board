@@ -1,0 +1,11 @@
+.nav-list {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.nav-list_title {
+  text-transform: uppercase;
+  color: var(--color__secondary);
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}

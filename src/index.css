@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  transition: color 0.1s ease-in-out, background 0.1s ease-in-out;
+}
+
+:root {
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+
+  color: var(--color);
+  background-color: var(--background-color);
+}
+
+.body__modal {
+  overflow: hidden;
+}
+
+#root {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.theme__dark {
+  --color: rgb(255, 255, 255);
+  --color__secondary: rgb(128, 128, 128);
+  --color__on-secondary: rgb(0, 0, 0);
+
+  --background-color: rgb(33, 33, 45);
+  --background-color__secondary: rgb(44, 44, 56);
+  --background-color__placeholder: rgb(35, 35, 47);
+
+  --elements__primary: rgb(100, 95, 198);
+  --elements__secondary: rgb(255, 255, 255);
+}
+
+.theme__light {
+  --color: rgb(0, 0, 0);
+  --color__secondary: rgb(128, 128, 128);
+  --color__on-secondary: rgb(255, 255, 255);
+
+  --background-color: rgb(245, 245, 255);
+  --background-color__secondary: rgb(255, 255, 255);
+  --background-color__placeholder: rgb(230, 240, 250);
+
+  --elements__primary: rgb(100, 95, 198);
+  --elements__secondary: rgb(33, 33, 45);
+}
+
+.label {
+  width: 100%;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0.5rem auto;
+}
+
+.alert {
+  font-weight: lighter;
+  font-size: small;
+  color: rgb(211, 64, 64);
+}
+
+.text__secondary {
+  color: var(--color__secondary);
+}
+
+.temp {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  background-color: var(--background-color__placeholder);
+  padding: 1rem 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.temp :checked + span {
+  text-decoration: line-through;
+  color: var(--color__secondary);
+}

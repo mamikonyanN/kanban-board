@@ -1,0 +1,14 @@
+.board {
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem;
+  margin-top: 96px;
+}
+
+.board > *:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.board_untitled-column {
+  padding-top: 2.125rem;
+}

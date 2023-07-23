@@ -1,0 +1,30 @@
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column_title {
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  color: var(--color__secondary);
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.column_tasks-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.column_actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  flex-grow: 1;
+}
+
+.column__dragged-over {
+  box-shadow: silver 0 0 5px, silver 0 0 2px inset;
+}

@@ -1,0 +1,32 @@
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+
+  display: flex;
+  flex-direction: row;
+  align-content: baseline;
+  justify-content: center;
+  align-items: center;
+
+  transition: box-shadow 0.2s ease-out;
+}
+
+.button__primary {
+  background: var(--elements__primary);
+  color: white;
+}
+
+.button__secondary {
+  background: var(--elements__secondary);
+  color: var(--elements__primary);
+}
+
+.button__fill {
+  width: 100%;
+}

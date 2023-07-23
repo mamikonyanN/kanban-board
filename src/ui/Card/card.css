@@ -1,0 +1,39 @@
+.card {
+  background: var(--background-color__secondary);
+  color: var(--color);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card__sm {
+  width: 280px;
+}
+
+.card__md {
+  width: 480px;
+}
+
+.card__lg {
+  width: 680px;
+}
+
+.card__muted {
+  background: var(--background-color__placeholder);
+  box-shadow: unset;
+}
+
+.card__centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__fill-height {
+  height: 100%;
+}
+
+.card__clickable {
+  cursor: pointer;
+}

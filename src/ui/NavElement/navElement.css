@@ -1,0 +1,33 @@
+.nav-element {
+  display: flex;
+
+  margin-left: -1.5rem;
+  padding: 0.75rem;
+  padding-left: 1.5rem;
+
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+  color: var(--color__secondary);
+  cursor: pointer;
+}
+
+.nav-element__active {
+  background: var(--elements__primary);
+  color: white;
+}
+
+.nav-element__primary {
+  color: var(--elements__primary);
+}
+
+.nav-item_icon {
+  margin-right: 0.5rem;
+}
+
+.nav-item_title {
+  flex-grow: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
